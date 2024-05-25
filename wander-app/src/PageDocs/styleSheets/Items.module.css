@@ -1,0 +1,97 @@
+
+.itemContainer{
+    background-color: rgba(211, 211, 211, 0);
+    border-radius: 15px;
+    padding: 3%;
+    cursor: pointer;
+    margin: 4%;
+    transition-duration: 0.4s;
+}
+.picture{
+    transition-duration: 0.44s;
+}
+.picture:active{
+    transform: scale(1.2);
+}
+.itemName{
+    color: grey;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.itemDescription{
+    color: grey;
+    font-size: 1.35em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+}
+.btnContainer{
+    background-color: rgba(211, 211, 211, 0.781);
+    padding: 3%;
+    border-radius: 10px;
+    border: none;
+    animation: btnCintro 0.44s ease-in;
+}
+@keyframes btnCintro {
+    0%{
+        padding: 0;
+        border-radius: 0;
+        opacity: 0;
+    }
+    100%{
+        padding: 3%;
+        border-radius: 10px;
+        opacity: 100%;
+    }
+    
+}
+.cartAddBtn{
+    padding: 2% 4%;
+    margin: auto 0 5% auto;
+    border: 1px solid black;
+    border-radius: 9px;
+    background-color: transparent;
+    color: grey;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition-duration: 0.55s;
+    animation: btninto 0.35s ease-in;
+}
+.cartAddBtn:hover{
+    background-color: rgba(128, 128, 128, 0.365);
+    color: white;
+    border-color: gray;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.091);
+}
+.cartAddBtn:active{
+    background-color: rgb(132, 132, 132);
+}
+@keyframes btninto {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.cartInput{
+    max-width: 30%;
+    max-height: 6vh;
+    border-radius: 10px;
+    margin-right: 0;
+    border: 1px solid grey;
+    font-size: 1.5em;
+}
+@media (min-width: 800px){
+    .itemContainer{
+        background-color: rgba(211, 211, 211, 0.196);
+        border-radius: 15px;
+        padding: 3%;
+        cursor: pointer;
+        margin: 4%;
+        transition-duration: 0.4s;
+    }
+
+}
